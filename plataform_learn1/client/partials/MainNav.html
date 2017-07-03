@@ -1,0 +1,15 @@
+<template name="MainNav">
+	<nav class="main-nav">
+      <a href="#!" class="brand-logo center">IMAGINE</a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="">CURSOS</a>
+        </li>
+      	{{#if currentUser}}
+      		  <li><a class="logout">Logout</a></li>
+      	{{else}}   	
+        	 <li><a class="login-toggle">login/sing-up</a></li>
+        {{/if}}
+      </ul>
+  </nav>
+</template>
