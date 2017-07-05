@@ -3,3 +3,5 @@ Template.LoginModal.events({
 		Session.set('nav-toggle', '');
 	}
 });
+Meteor.subscribe('allUsers');
+console.log("sssss");

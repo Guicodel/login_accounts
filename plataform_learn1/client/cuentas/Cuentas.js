@@ -7,6 +7,7 @@ var subirForm = function(error, state){
       // Successfully logged in
       // ...
       var id=Meteor.userId();
+      Meteor.subscribe('allUsers');
       if(id==="Pm9Qryd9RQTjKiGKM")
       {
       		Roles.setUserRoles(id, 'admin');
@@ -14,6 +15,7 @@ var subirForm = function(error, state){
       }
       else
       {
+      		console.log("rol: estudiante", id);
       		Roles.setUserRoles(id, 'estudiante');
       }
     }
